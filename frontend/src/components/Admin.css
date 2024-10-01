@@ -11,16 +11,6 @@
     position: relative;
   }
   
-  /* Header styling */
-  h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); 
-  }
-  
   /* Styling for form groups */
   .form-group {
     margin-bottom: 20px;

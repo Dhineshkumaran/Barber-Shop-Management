@@ -4,10 +4,9 @@ function Pricing() {
   return (
     <section className="section pricing has-bg-image has-before" id="pricing" aria-label="pricing" style={{ backgroundColor: "white" }}>
       <div>
-        <h2 className="h2 section-title text-center">Services we provide</h2>
+        <h2 className="h2 text-center">Services we provide</h2>
         <div>
           
-
           <ul className="grid-list" style={{ listStyleType: "none" }}>
             <div style={{ display: "flex", justifyContent: "space-around", padding: "30px" }}>
               <li data-filter="shaving">

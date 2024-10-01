@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer text-center">
       <div className="container">
         <p className="footer-text">Contact Us:<br></br>
         1, Mettur Road near Bus stand, Erode-638001<br></br>

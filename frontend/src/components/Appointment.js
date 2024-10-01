@@ -25,15 +25,19 @@ const Appointment = () => {
   };
 
   useEffect(() => {
-    // Dynamically load the Razorpay script
     const script = document.createElement('script');
     script.src = 'https://checkout.razorpay.com/v1/checkout.js';
     script.async = true;
+  
+    script.onerror = () => {
+      alert('Failed to load payment gateway. Please try again later.');
+    };
+  
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
     }
-  }, []);
+  }, []);  
 
   const handleChange = (e) => {
     setFormData({
@@ -53,7 +57,7 @@ const Appointment = () => {
     };
 
     const options = {
-      key: 'YOUR_RAZORPAY_KEY_ID', // Replace with your Razorpay Key ID
+      key: 'rzp_test_4rdgre6savrrmw', // Replace with your Razorpay Key ID
       amount: amount,
       currency: 'INR',
       name: 'Your Company Name',

@@ -3,8 +3,10 @@
     background-size: cover;
     background-position: center;
     padding: 2rem 0;
-    color: #f11414;
-    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .footer-list {
@@ -21,7 +23,7 @@
   }
   
   .contact-link {
-    color: #f31212;
+    color: white;
     text-decoration: none;
   }
   
