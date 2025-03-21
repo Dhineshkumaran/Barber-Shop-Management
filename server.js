@@ -54,6 +54,24 @@ app.get('/getoffers', async(req, res)=>{
     }
 })
 
+app.post('/login', async(req, res)=>{
+    try {
+        const db = client.db("Parlour_Management");
+        const collection = db.collection("users");
+    
+        const email = req.body.email;
+        const password = req.body.password;
+        const user = await collection.findOne({email, password});
+        if(!user){
+            res.status(200).send("Login successful.");
+        } else {
+            throw new Error("User not found.");
+        }
+    } catch (error) {
+        res.status(404).send(error);
+    }
+})
+
 app.get('/getservices', async(req, res)=>{
     try {
         const db = client.db("Parlour_Management");
